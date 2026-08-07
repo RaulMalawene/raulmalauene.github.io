@@ -141,9 +141,12 @@ section{padding:100px 48px;max-width:1200px;margin:0 auto}
 .tag{background:transparent;border:1px solid var(--grey-border);color:var(--grey-light);padding:3px 9px;font-size:10px;letter-spacing:1px;text-transform:uppercase}
 .project-arrow{position:absolute;top:36px;right:36px;font-size:18px;color:var(--grey-border);transition:all .3s}
 .project-card:hover .project-arrow{color:#fff;transform:translate(4px,-4px)}
+a.project-card{display:block;color:inherit;text-decoration:none}
 
 /* hackathon badge */
 .hackathon-badge{display:inline-flex;align-items:center;gap:8px;background:transparent;border:1px solid rgba(255,255,255,.25);color:var(--white-soft);font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:5px 12px;margin-bottom:14px}
+.project-link-hint{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--grey-light);letter-spacing:.5px;margin-top:4px}
+.project-card:hover .project-link-hint{color:var(--white-soft)}
 
 /* highlight card spans full width */
 .project-card.highlight{grid-column:1/-1;display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
@@ -391,31 +394,38 @@ footer p{font-size:11px;color:var(--grey-light);letter-spacing:1px}
 
   </div>
 
+  <!-- 02 BIOFUND — projecto real em produção, em destaque a toda a largura -->
+  <a href="https://mdr.biofund.org.mz/" target="_blank" rel="noopener noreferrer"
+     class="project-card reveal" style="margin-bottom:1px" aria-label="Abrir o Sistema de Gestão de Reclamações da BIOFUND em produção">
+    <span class="project-arrow">↗</span>
+    <div class="hackathon-badge">🌐 Em Produção — mdr.biofund.org.mz</div>
+    <div class="project-num">02</div>
+    <h3 class="project-name">Sistema de Gestão de Reclamações — BIOFUND</h3>
+    <p class="project-desc">
+      Concepção e desenvolvimento, de raiz, do sistema de registo e gestão de ocorrências da <strong style="color:var(--white-soft)">BIOFUND — Fundação para a Conservação da Biodiversidade</strong>, organização de referência nacional na área da conservação da biodiversidade, integrado na equipa da TopTech. Actualmente em produção, o sistema assegura rastreabilidade total das ocorrências — do registo à resolução — através de uma arquitectura de dados desenhada para garantir conformidade com os fluxos definidos. O trabalho abrangeu todo o ciclo do projecto: levantamento de requisitos junto dos stakeholders, modelação de processos, prototipagem de interfaces, desenvolvimento de back-end e front-end, e elaboração dos manuais de utilizador, de administrador e do sistema.
+    </p>
+    <div class="project-tags" style="margin-bottom:10px">
+      <span class="tag">Levantamento de Requisitos</span><span class="tag">Modelação de Processos</span>
+      <span class="tag">Arquitectura de Dados</span><span class="tag">UML</span><span class="tag">BPMN</span>
+      <span class="tag">Figma</span><span class="tag">Back-end</span><span class="tag">Front-end</span>
+      <span class="tag">Documentação Técnica</span>
+    </div>
+    <span class="project-link-hint">Ver sistema em produção ↗</span>
+  </a>
+
   <!-- GRELHA 2 COLUNAS para os restantes -->
   <div class="projects-grid" style="margin-top:1px">
 
-    <!-- 02 LANDING PAGE E-COMMERCE -->
+    <!-- 03 LANDING PAGE E-COMMERCE -->
     <div class="project-card reveal">
       <span class="project-arrow">↗</span>
-      <div class="project-num">02</div>
+      <div class="project-num">03</div>
       <h3 class="project-name">Landing Page — E-Commerce</h3>
       <p class="project-desc">Design e desenvolvimento de uma landing page para loja online. Interface moderna focada em conversão — hero section impactante, showcase de produtos, depoimentos e CTAs estratégicos. Totalmente responsiva para desktop e mobile.</p>
       <div class="project-tags">
         <span class="tag">Figma</span><span class="tag">HTML5</span>
         <span class="tag">CSS3</span><span class="tag">JavaScript</span>
         <span class="tag">UI Design</span><span class="tag">Responsive</span>
-      </div>
-    </div>
-
-    <!-- 03 BIOFUND -->
-    <div class="project-card reveal reveal-delay-1">
-      <span class="project-arrow">↗</span>
-      <div class="project-num">03</div>
-      <h3 class="project-name">Sistema de Reclamações — Biofund</h3>
-      <p class="project-desc">Análise, modelação e desenho de interface de um sistema de registo e gestão de reclamações para a empresa <strong style="color:var(--white-soft)">Biofund</strong>. Incluiu levantamento de requisitos, mapeamento de processos com UML e BPMN, e prototipagem completa no Figma.</p>
-      <div class="project-tags">
-        <span class="tag">Análise de Sistemas</span><span class="tag">UML</span>
-        <span class="tag">BPMN</span><span class="tag">Figma</span><span class="tag">Bizagi</span>
       </div>
     </div>
 
